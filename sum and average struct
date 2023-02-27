@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct sum {
+int a,b,c,d,e;  
+}s;
+int main(){
+int sum;
+printf("enter a");
+scanf("%d",&s.a);
+printf("enter b");
+scanf("%d",&s.b);
+printf("enter c");
+scanf("%d",&s.c);
+printf("enter d");
+scanf("%d",&s.d);
+printf("enter e");
+scanf("%d",&s.e);
+sum=(s.a+s.b+s.c+s.d+s.e);
+printf("sum=%d",sum);
+float average;
+printf("enter a");
+scanf("%d",&s.a);
+printf("enter b");
+scanf("%d",&s.b);
+printf("enter c");
+scanf("%d",&s.c);
+printf("enter d");
+scanf("%d",&s.d);
+printf("enter e");
+scanf("%d",&s.e);
+average= (float)(s.a+s.b+s.c+s.d+s.e)/5 ;
+printf("average=%f",average);
+return 0;
+}
