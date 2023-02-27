@@ -1,0 +1,10 @@
+#include<stdio.h>
+struct information{
+int a;  
+}s;
+int main(){
+printf("enter the information");
+scanf("%d",&s.a);
+printf("information %d", s.a);
+return 0;
+}
