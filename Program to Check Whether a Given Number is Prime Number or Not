@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	 int number, i, flag=0;
+	 clrscr();
+	 
+	 // Inputs
+	 printf("Enter integer number: ");
+	 scanf("%d", &number);
+	 
+	 // Checking for prime
+	 for(i=2;i<=number/2; i++)
+	 {
+		  if(number%i==0)
+		  {
+			   flag = 1;
+			   break;
+		  }
+	 }
+	 
+	 // Taking decision
+	 if(flag==0 && number>=2)
+	 {
+	  	printf("%d is PRIME.", number);
+	 }
+	 else
+	 {
+	  	printf("%d is NOT PRIME.", number);
+	 }
+	
+	 getch();
+	 return(0);
+}
