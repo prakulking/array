@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+/* Function Prototype */
+long int fact(int n);
+
+/* Main function */
+int main()
+{
+	 long int number, result;
+
+	 /* Input */
+	 printf("Enter any positive integer: ");
+	 scanf("%ld", &number);
+
+	 /* Function call */
+	 result = fact(number);
+	 printf("%ld != %ld",number,result);
+	 return(0);
+}
+
+long int fact(int n)
+{
+    long int i, f=1;
+    for(i=1;i<= n;i++)
+	 {
+	  f = f*i;
+	 }
+	 return f;
+}
