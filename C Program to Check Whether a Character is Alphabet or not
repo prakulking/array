@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	 char ch;
+	 clrscr();
+	 printf("Enter any character: ");
+	 scanf("%c", &ch);
+	
+	 if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+	 {
+	  	printf("%c is ALPHABET.", ch);
+	 }
+	 else
+	 {
+	  	printf("%c is NOT ALPHABET.", ch);
+	 }
+	
+	 getch();
+	 return(0);
+}
