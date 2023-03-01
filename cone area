@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h> //for sqrt() function
+
+#define PI 3.141592
+
+int main()
+{
+    float area, radius, height;
+
+    // Reading radius
+    printf("Enter radius of cone: ");
+    scanf("%f", &radius);
+
+    // Reading height
+    printf("Enter height of cone: ");
+    scanf("%f", &height);
+
+    // Calculating surface area of cone
+    area = PI * radius * (radius + sqrt(radius*radius + height*height));
+
+    // Displaying area
+    printf("Surface area = %f", area);
+
+    return 0;
+}
