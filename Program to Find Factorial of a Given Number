@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	 long int i,n, f=1;
+	 clrscr();
+	 
+	 /* Input */
+	 printf("Enter any positive integer: ");
+	 scanf("%ld", &n);
+	 
+	 /* Finding Factorial */
+	 for(i=1;i<= n;i++)
+	 {
+	  f = f*i;
+	 }
+	 printf("%ld != %ld",n,f);
+	 getch();
+	 return(0);
+}
