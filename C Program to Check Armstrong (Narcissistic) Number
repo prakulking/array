@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+int main()
+{
+	 int number, original, rem, sum=0, digit=0;
+	 clrscr();
+	 printf("Enter number: ");
+	 scanf("%d", &number);
+	
+	 original = number;
+	
+	 /* Counting number of digit in a given number */
+	 while(number!=0)
+	 {
+		  digit++;
+		  number = number/10;
+	 }
+	 
+	 /* After execution above loop number becomes 0
+	    So copying original number to variable number */
+	    
+	 number = original;
+	 /* Finding sum */
+	 while(number != 0)
+	 {
+		  rem = number%10;
+		  sum = sum + pow(rem, digit);
+		  number = number/10;
+	 }
+	 /* Making decision */
+	 if(sum == original)
+	 {
+	  	printf("%d is ARMSTRONG.", original);
+	 }
+	 else
+	 {
+	  	printf("%d is NOT ARMSTRONG.", original);
+	 }
+	 getch();
+	 return(0);
+}
